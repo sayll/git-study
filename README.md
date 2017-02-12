@@ -3,7 +3,8 @@
 ## 文件学习
 * 文件新添：
 ```bash
-$ git add fileName / git add *   # 添加全不文件修改`
+$ git add `fileName`  # 添加指定文件到版本库
+$ git add *           # 添加全不文件修改
 ```
 
 ## 状态查看
