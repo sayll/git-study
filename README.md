@@ -97,3 +97,4 @@ $ git branch -d <name>
 * 解决冲突后，再`git add <file>`,最后删除分支`git checkout -d <branch>`
 
 ### 分支管理策略
+
