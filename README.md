@@ -74,7 +74,7 @@ $ git branch <name>
 * 切换分支：
 ``` base
 $ git checkout <name>
-```
+```  dasddas
 
 * 创建+切换分支：
 ``` base
@@ -95,3 +95,5 @@ $ git branch -d <name>
 
 * `git merge <branch>`发现冲突时，`git status`查看冲突文件。
 * 解决冲突后，再`git add <file>`,最后删除分支`git checkout -d <branch>`
+
+### 分支管理策略
