@@ -97,4 +97,8 @@ $ git branch -d <name>
 * 解决冲突后，再`git add <file>`,最后删除分支`git checkout -d <branch>`
 
 ### 分支管理策略
-
+* 合并分支时，主动为`commit`打上信息。
+``` base
+$ git merge --no-ff -m "message" <branch>
+```
+合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并。
