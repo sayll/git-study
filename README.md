@@ -90,3 +90,8 @@ $ git merge <name>
 ``` base
 $ git branch -d <name>
 ```
+
+### 解决冲突
+
+* `git merge <branch>`发现冲突时，`git status`查看冲突文件。
+* 解决冲突后，再`git add <file>`,最后删除分支`git checkout -d <branch>`
