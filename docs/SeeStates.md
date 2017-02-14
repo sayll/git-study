@@ -13,5 +13,5 @@ $ git reflog        # 查看所有（未来）历史
 
 * 远程版本库
 ``` base
-$ git remote -v     # 查看当前历史
+$ git remote -v     # 查看远程库信息
 ```
