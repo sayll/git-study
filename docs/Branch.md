@@ -28,7 +28,8 @@ $ git merge <name>
 * 删除分支：
 ``` base
 $ git branch -d <name>
-$ git branch -D <name>  # 强制删除分支
+$ git branch -D <name>              # 强制删除分支
+$ git push origin --delete <name>   # 删除远程分支
 ```
 
 ## 解决冲突
