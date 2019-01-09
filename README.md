@@ -23,9 +23,10 @@ canvas_x.makeImage({...})
 |函数|描述|
 |----|----|
 |[makeImage](#makeImage)(options, ...)|绘制一个图片|
-|renderEditor(container, options, callback)|创建编辑节点DOM| 
+|[renderEditor](#renderEditor)(container, options, callback)|创建编辑节点DOM| 
 
-## makeImage：高阶合成图片
+## makeImage
+高阶合成图片
 > 可以接受三个类型：图片，文字，二维码
 
 |参数|类型|描述|
@@ -33,7 +34,8 @@ canvas_x.makeImage({...})
 |options|object|[MakeImageOptions](#MakeImageOptions)（详情请见，核心配置项）|
 |callback|function|回调参数：(error?: string, data?: string) => void|
 
-## renderEditor：生成编辑界面
+## renderEditor
+生成编辑界面
 > 可以接受三个类型：图片，文字，二维码
 
 |参数|类型|描述|
@@ -44,10 +46,11 @@ canvas_x.makeImage({...})
 
 
 ## MakeImageOptions
+绘图核心配置项
 
 |参数|类型|描述|
 |---|---|---|
-|parts|array|各组成部分([ImageEntry](#ImageEntry) , TextEntry , QRCodeEntry): 详细见基础类型参数|
+|parts|array|各组成部分([ImageEntry](#ImageEntry) , [TextEntry](#TextEntry) , [QRCodeEntry](#QRCodeEntry)): 详细见基础类型参数|
 |width|number|最终图片宽度，建议为显示容器的二倍|
 |height|number|最终图片高度，建议为显示容器的二倍|
 |background|string|画布底色|
@@ -56,7 +59,9 @@ canvas_x.makeImage({...})
 |compress|number|最终图片压缩比，默认0.8|
 
 ## 基础类型参数
-- ImageEntry: 表示一个图片部分。
+
+### ImageEntry 
+表示一个图片部分。
 
 |参数|类型|描述|
 |---|---|---|
@@ -74,7 +79,8 @@ canvas_x.makeImage({...})
 |opacity|number|透明度。0-1 之间|
 |clipOptions|object|x: 表示截取图片的x定位; y: 表示截取图片的y定位; zoom: 是否进行图片等比缩放|
 
-- TextEntry: 表示一个文本部分。
+### TextEntry
+表示一个文本部分。
 
 |参数|类型|描述|
 |---|---|---|
@@ -90,7 +96,8 @@ canvas_x.makeImage({...})
 |y|number|相对于左上角的垂直坐标|
 |opacity|number|透明度。0-1 之间|
 
-- QRCodeEntry: 表示一个二维码部分
+### QRCodeEntry
+表示一个二维码部分
 
 |参数|类型|描述|
 |---|---|---|
