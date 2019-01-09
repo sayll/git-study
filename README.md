@@ -89,8 +89,8 @@ canvas_x.makeImage({...})
 |size|string|字体大小|
 |color|string|字体颜色|
 |bold|boolean|是否加粗|
-|align|string|文本对齐方式，"left"、"right"、"center"，根据基准点（x,y）水平对齐。|
-|lineAlign|string|文本对齐方式，"top"、"middle"、"bottom"，根据基准点（x,y）垂直对齐。|
+|textAlign|string|文本对齐方式，"center"、"left"、"right"，根据基准点（x,y）水平对齐。默认：'left'|
+|lineAlign|string|文本对齐方式，"top"、"middle"、"bottom"，根据基准点（x,y）垂直对齐。默认：'top'|
 |editable|boolean|能否编辑，编辑模式下使用|
 |x|number|相对于左上角的水平坐标|
 |y|number|相对于左上角的垂直坐标|
