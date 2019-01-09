@@ -30,7 +30,7 @@ canvas_x.makeImage({...})
 
 |参数|类型|描述|
 |---|---|---|
-|options|object|[MakeImageOptions](#MakeImageOptions: 核心配置项)（详情请见，核心配置项）|
+|options|object|[MakeImageOptions](#MakeImageOptions)（详情请见，核心配置项）|
 |callback|function|回调参数：(error?: string, data?: string) => void|
 
 ## renderEditor：生成编辑界面
@@ -39,11 +39,11 @@ canvas_x.makeImage({...})
 |参数|类型|描述|
 |---|---|---|
 |container|HTMLElement|一个容器元素节点|
-|options|object|[MakeImageOptions](#MakeImageOptions: 核心配置项)（详情请见，核心配置项|
+|options|object|[MakeImageOptions](#MakeImageOptions)（详情请见，核心配置项|
 |callback|function|回调参数：(base64: string) => void|
 
 
-## MakeImageOptions: 核心配置项
+## MakeImageOptions
 
 |参数|类型|描述|
 |---|---|---|
